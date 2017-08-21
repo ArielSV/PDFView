@@ -86,22 +86,24 @@ public class MainActivity extends AppCompatActivity
 
             @Override
             public void onDrawerOpened(View drawerView) {
-                progressBar.setVisibility(View.VISIBLE);
-                Picasso.with(getApplicationContext())
-                        .load(photoUser)
-                        .into(circleImageView, new com.squareup.picasso.Callback() {
-                            @Override
-                            public void onSuccess() {
-                                progressBar.setVisibility(View.GONE);
-                                circleImageView.setVisibility(View.VISIBLE);
-                            }
+                if (MyPDFApp.userType.equals("firebase")) {
+                    progressBar.setVisibility(View.VISIBLE);
+                    Picasso.with(getApplicationContext())
+                            .load(photoUser)
+                            .into(circleImageView, new com.squareup.picasso.Callback() {
+                                @Override
+                                public void onSuccess() {
+                                    progressBar.setVisibility(View.GONE);
+                                    circleImageView.setVisibility(View.VISIBLE);
+                                }
 
-                            @Override
-                            public void onError() {
-                                progressBar.setVisibility(View.GONE);
-                                Toast.makeText(MainActivity.this, "Error to load img", Toast.LENGTH_SHORT).show();
-                            }
-                        });
+                                @Override
+                                public void onError() {
+                                    progressBar.setVisibility(View.GONE);
+                                    Toast.makeText(MainActivity.this, "Error to load img", Toast.LENGTH_SHORT).show();
+                                }
+                            });
+                }
             }
 
             @Override
