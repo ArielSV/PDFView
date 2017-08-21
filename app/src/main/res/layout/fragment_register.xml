@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/com_facebook_device_auth_text"
+    android:fitsSystemWindows="true">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="30dp"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgPerfil"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/registericon"
+                    android:textSize="36dp"/>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+                <EditText android:id="@+id/input_register_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:hint="Nombre"
+                    android:imeOptions="actionDone" />
+                </android.support.design.widget.TextInputLayout>
+
+                <!-- Email Label -->
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+                    <EditText android:id="@+id/input_register_mail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:imeOptions="actionDone"
+                        android:hint="Email" />
+                </android.support.design.widget.TextInputLayout>
+
+                <!-- Password Label -->
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp">
+                    <EditText android:id="@+id/input_register_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionDone"
+                        android:inputType="textPassword"
+                        android:hint="Password"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <ImageView
+                    android:id="@+id/iconCamera"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"
+                    android:layout_width="60dp"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:layout_height="60dp"
+                    android:src="@drawable/cameraicon"/>
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btn_Register"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="24dp"
+                    android:padding="12dp"
+                    android:imeOptions="actionDone"
+                    android:text="Registro"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+</LinearLayout>
+
+
+
+
+
+

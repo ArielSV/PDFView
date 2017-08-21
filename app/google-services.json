@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "826609475791",
+    "firebase_url": "https://mypdfapp-ae560.firebaseio.com",
+    "project_id": "mypdfapp-ae560",
+    "storage_bucket": "mypdfapp-ae560.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:826609475791:android:5ddcb23b9bc1f7b1",
+        "android_client_info": {
+          "package_name": "com.example.ariel.mypdfapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "826609475791-oksj1ktrjeuu7rg655q9kdjciiakgbnf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ariel.mypdfapp",
+            "certificate_hash": "60153326df192570640577b63f77fa551c7d13bc"
+          }
+        },
+        {
+          "client_id": "826609475791-dfjurnpvsm8u1t08i36vnrd8javuk1oa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB66OwjUmSUtcVLqXvzPxNoD7QTd2r4o7g"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "826609475791-dfjurnpvsm8u1t08i36vnrd8javuk1oa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
