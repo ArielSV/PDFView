@@ -29,6 +29,7 @@ public class Perfil extends Fragment {
     private TextView nameTextView;
     private TextView emailTextView;
     private CircleImageView circleImageView;
+    int a;
 
 
     @Override

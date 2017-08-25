@@ -60,6 +60,7 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        Toast.makeText(this, "test", Toast.LENGTH_SHORT).show();
         listUsers = new ArrayList<>();
         progressBar = new ProgressBar(this);
 

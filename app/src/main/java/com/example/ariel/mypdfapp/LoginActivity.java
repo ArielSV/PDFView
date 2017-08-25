@@ -58,6 +58,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        Toast.makeText(this, "test", Toast.LENGTH_SHORT).show();
         editTextEmail = (EditText) findViewById(R.id.input_email);
         editTextPass = (EditText) findViewById(R.id.input_password);
         buttonLogin = (Button) findViewById(R.id.btn_login);

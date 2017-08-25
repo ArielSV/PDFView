@@ -15,6 +15,7 @@ public class MyPDFApp extends Application {
     public static String email="";
     public static String urlPhoto="";
     public static String userType = "";
+    int a;
 
 
     @Override
